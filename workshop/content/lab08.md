@@ -15,7 +15,7 @@ export SEGMENT=$(hostname -I|cut -d. -f3)
 export IPCFG="ip=192.168.${SEGMENT}.100::192.168.${SEGMENT}.1:255.255.255.0:::none nameserver=192.168.${SEGMENT}.10"
 
 # Update Settings, and allocate 4CPU and 16GB RAM
-govc vm.change -vm=master0.%GUID%.dynamic.redhatworkshops.io \
+govc vm.change -vm=master-0.%GUID%.dynamic.redhatworkshops.io \
               -c=4 \
               -m 16384 \
               -e="guestinfo.ignition.config.data.encoding=base64" \
@@ -41,7 +41,7 @@ export SEGMENT=$(hostname -I|cut -d. -f3)
 export IPCFG="ip=192.168.${SEGMENT}.101::192.168.${SEGMENT}.1:255.255.255.0:::none nameserver=192.168.${SEGMENT}.10"
 
 # Update Settings, and allocate 4CPU and 16GB RAM
-govc vm.change -vm=master1.%GUID%.dynamic.redhatworkshops.io \
+govc vm.change -vm=master-1.%GUID%.dynamic.redhatworkshops.io \
               -c=4 \
               -m 16384 \
               -e="guestinfo.ignition.config.data.encoding=base64" \
@@ -67,7 +67,7 @@ export SEGMENT=$(hostname -I|cut -d. -f3)
 export IPCFG="ip=192.168.${SEGMENT}.102::192.168.${SEGMENT}.1:255.255.255.0:::none nameserver=192.168.${SEGMENT}.10"
 
 # Update Settings, and allocate 4CPU and 16GB RAM
-govc vm.change -vm=master2.%GUID%.dynamic.redhatworkshops.io \
+govc vm.change -vm=master-2.%GUID%.dynamic.redhatworkshops.io \
               -c=4 \
               -m 16384 \
               -e="guestinfo.ignition.config.data.encoding=base64" \
