@@ -32,6 +32,7 @@ Next we'll create the bootstrap node, which will help facilitate the install and
                   -e="guestinfo.ignition.config.data.encoding=base64" \
                   -e="guestinfo.ignition.config.data=${CONFIG_DATA}" \
                   -e="guestinfo.afterburn.initrd.network-kargs=${IPCFG}"
+   
    #power on the vm
    govc vm.power -on bootstrap.npfd7.dynamic.opentlc.com
    ```
