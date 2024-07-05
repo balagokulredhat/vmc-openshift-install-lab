@@ -3,7 +3,7 @@ Next we'll create the bootstrap node, which will help facilitate the install and
 1. Right click on the **coreos** VM Template and select **Clone -> Clone to Virtual Machine...**
 2. For the Virtual machine name, specify:
    ```copy
-   bootstrap.%GUID%.dynamic.opentlc.com
+   bootstrap.%GUID%.dynamic.redhatworkshops.io
    ```
 3. Select your sandbox-%GUID% folder for the location:
    ```
@@ -34,6 +34,6 @@ Next we'll create the bootstrap node, which will help facilitate the install and
                   -e="guestinfo.afterburn.initrd.network-kargs=${IPCFG}"
    
    #power on the vm
-   govc vm.power -on bootstrap.npfd7.dynamic.opentlc.com
+   govc vm.power -on bootstrap.npfd7.dynamic.redhatworkshops.io
    ```
 
