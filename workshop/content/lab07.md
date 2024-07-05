@@ -7,7 +7,7 @@ Next we'll create the bootstrap node, which will help facilitate the install and
    ```
 3. Select your sandbox-%GUID% folder for the location:
    ```
-   portal.vc.opentlc.com
+   vcsnsx-vc.infra.demo.redhat.com
    -> SDDC-Datacenter
       -> Workloads
          -> sandbox-%GUID%
@@ -26,7 +26,7 @@ Next we'll create the bootstrap node, which will help facilitate the install and
    export IPCFG="ip=192.168.${SEGMENT}.99::192.168.${SEGMENT}.1:255.255.255.0:::none nameserver=192.168.${SEGMENT}.10"
 
    # Update settings, and allocate 4CPU and 16GB RAM
-   govc vm.change -vm=bootstrap.%GUID%.dynamic.opentlc.com \
+   govc vm.change -vm=bootstrap.%GUID%.dynamic.redhatworkshops.io \
                   -c=4 \
                   -m 16384 \
                   -e="guestinfo.ignition.config.data.encoding=base64" \
