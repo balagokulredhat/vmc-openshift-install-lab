@@ -38,11 +38,11 @@ curl -L -o - "https://github.com/vmware/govmomi/releases/latest/download/govc_$(
 ```
 Then set some environment variables to configure `govc`:
 ```execute
-export GOVC_URL=portal.vc.opentlc.com
-export GOVC_USERNAME=sandbox-%GUID%@vc.opentlc.com
+export GOVC_URL=vcsnsx-vc.infra.demo.redhat.com
+export GOVC_USERNAME=sandbox-%GUID%@demo
 export GOVC_INSECURE=1
 ```
-And add your vSphere password like this:
+And add your vSphere password and datastore like this:
 ```
 export GOVC_PASSWORD=<your vCenter password>
 ```
