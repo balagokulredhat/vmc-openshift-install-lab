@@ -27,7 +27,7 @@ ocp4_pull_secret: 'CHANGEME'
 ##################################
 ####### OCP PROPERTIES HERE ######
 ocp_domain: 'CHANGEME'
-ocp_version: '4.13.15' #Default is ocp 4.13.15, if requiredyou can change this
+ocp_version: '4.13.15' #Default is ocp 4.13.15, if required you can change it based on your need. 
 venter_datastore: 'CHANGEME'
 ##################################
 ```
